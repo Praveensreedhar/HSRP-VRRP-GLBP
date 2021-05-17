@@ -26,3 +26,13 @@ version 2 : The messages are multicast at 224.0.0.102 and uses the UDP port 1985
 ### Configuration
 
 ![image](https://user-images.githubusercontent.com/49310101/118526316-bd421c00-b75d-11eb-9d3c-7b1a348ad030.png)
+
+#### Active Router configuration
+
+GWR1#(config) int fa0/0
+GWR1#(config-if)ip add 192.168.1.1 255.255.255.0
+GWR1#(config-if) standby 1 ip 192.168.1.3
+GWR1#(config-if) standby 1 name HSRP_TEST
+GWR1#(config-if) standby 1 priority 110
+GWR1#(config-if) standby 1 preempt
+
