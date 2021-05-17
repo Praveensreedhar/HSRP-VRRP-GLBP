@@ -45,7 +45,7 @@ GWR1#(config-if) standby 1 preempt
 
 GWR1#(config) int fa0/0
 
-GWR2#(config-if)ip add 192.168.1.1 255.255.255.0
+GWR2#(config-if)ip add 192.168.1.2 255.255.255.0
 
 GWR2#(config-if) standby 1 ip 192.168.1.3
 
